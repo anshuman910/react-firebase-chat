@@ -11,6 +11,13 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   // your config
+  apiKey: "AIzaSyBXG-UWTlW8L6Jx7KDL7bTQgvEZeCiJARw",
+  authDomain: "online-virtual-tax-5e436.firebaseapp.com",
+  projectId: "online-virtual-tax-5e436",
+  storageBucket: "online-virtual-tax-5e436.appspot.com",
+  messagingSenderId: "638192399042",
+  appId: "1:638192399042:web:5822b2e9de6425b7b6415b",
+  measurementId: "G-T19165DCY3"
 })
 
 const auth = firebase.auth();
@@ -25,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>OVT file upload</h1>
         <SignOut />
       </header>
 
@@ -99,7 +106,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>Send</button>
 
     </form>
   </>)
